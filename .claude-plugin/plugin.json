@@ -8,6 +8,7 @@
     "url": "https://product.odyssey365.app/"
   },
   "homepage": "https://product.odyssey365.app/",
+  "privacyPolicyUrl": "https://product.odyssey365.app/privacy-policy",
   "repository": "https://github.com/Odyssey365App/odyssey-plugin",
   "license": "MIT",
   "keywords": [
