@@ -34,8 +34,8 @@
       "Where are we on my Odyssey project board?",
       "Mindmap ideas for my next project on my board."
     ],
-    "brandColor": "#0B4FB3",
-    "brandColorDark": "#00D98B",
+    "brandColor": "#7B2FA8",
+    "brandColorDark": "#F26A5A",
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.png"
   },
