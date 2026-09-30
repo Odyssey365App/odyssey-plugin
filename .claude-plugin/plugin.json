@@ -9,6 +9,9 @@
   },
   "homepage": "https://product.odyssey365.app/",
   "privacyPolicyUrl": "https://product.odyssey365.app/privacy-policy",
+  "termsOfServiceUrl": "https://product.odyssey365.app/terms-of-service",
+  "supportUrl": "https://product.odyssey365.app/contact",
+  "documentationUrl": "https://github.com/Odyssey365App/odyssey-plugin#readme",
   "repository": "https://github.com/Odyssey365App/odyssey-plugin",
   "license": "MIT",
   "keywords": [
