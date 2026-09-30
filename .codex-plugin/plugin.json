@@ -1,0 +1,107 @@
+{
+  "name": "odyssey365",
+  "version": "1.0.0",
+  "description": "Plan and run projects on your Odyssey boards from a conversation: turn notes and plans into laid-out boards, get status briefings, move tasks across lists, and brainstorm as mindmaps. Uses the Odyssey MCP server with your own Odyssey account.",
+  "author": {
+    "name": "Odyssey365",
+    "url": "https://product.odyssey365.app/"
+  },
+  "homepage": "https://product.odyssey365.app/",
+  "repository": "https://github.com/Odyssey365App/odyssey-plugin",
+  "license": "MIT",
+  "keywords": ["odyssey", "project board", "kanban", "mindmap", "tasks", "notes", "productivity"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Odyssey",
+    "shortDescription": "Plan projects on your boards",
+    "longDescription": "Connect your Odyssey account to plan and run projects on Odyssey boards through conversation. Turn a plan or meeting notes into a board with task lists and note cards, get a briefing on what is done and what is stuck, move tasks between lists and mark them complete, and brainstorm ideas as a mindmap on the board. You can also find and manage your tasks, notes, calendar events, routines, and records. An Odyssey account is required, and the tools access only the connected user's data and boards shared with that user. Deleting items and posting board comments happen only after you confirm.",
+    "developerName": "Odyssey365",
+    "category": "Productivity",
+    "capabilities": [
+      "Build project boards from plans and notes",
+      "Brief board progress",
+      "Move and complete tasks across board lists",
+      "Brainstorm as a mindmap",
+      "Manage tasks, notes, and calendar events"
+    ],
+    "websiteURL": "https://product.odyssey365.app/",
+    "supportURL": "https://product.odyssey365.app/contact",
+    "privacyPolicyURL": "https://product.odyssey365.app/privacy-policy",
+    "termsOfServiceURL": "https://product.odyssey365.app/terms-of-service",
+    "defaultPrompt": [
+      "Put this plan on a new Odyssey board.",
+      "Where are we on my Odyssey project board?",
+      "Mindmap ideas for my next project on my board."
+    ],
+    "brandColor": "#0B4FB3",
+    "brandColorDark": "#00D98B",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Brief a board's progress",
+              "prompt": "Where are we on my Odyssey board \"Review Board\"?",
+              "tools_triggered": "list_projects, get_project",
+              "expected_behavior": "Finds the Review Board and reports done, in-progress, and not-started counts per list with the notable task titles. Changes nothing."
+            },
+            {
+              "description": "Build a board from a plan",
+              "prompt": "Create an Odyssey board called \"Trip Plan\" with a To do list containing: book flights, reserve hotel, pack bags.",
+              "tools_triggered": "create_project, add_project_component, create_todo",
+              "expected_behavior": "Creates the Trip Plan board, adds a To do list, and creates three tasks inside that list; reports the board and list with the task count."
+            },
+            {
+              "description": "Move a task between lists",
+              "prompt": "On my Review Board, move \"Draft outline\" from Doing to Done and mark it complete.",
+              "tools_triggered": "get_project, update_project_component, complete_todo",
+              "expected_behavior": "Removes the task from the Doing list, appends it to the Done list, marks it complete, and confirms the move."
+            },
+            {
+              "description": "Brainstorm as a mindmap",
+              "prompt": "Make a mindmap on my Review Board about \"Launch ideas\" with branches for channels, content, and partners.",
+              "tools_triggered": "get_project, add_project_component, tidy_board",
+              "expected_behavior": "Proposes the branches, then creates a mindmap center with three linked branches on the board and reports them."
+            },
+            {
+              "description": "Find today's unfinished tasks",
+              "prompt": "Show my unfinished Odyssey tasks for today.",
+              "tools_triggered": "list_todos",
+              "expected_behavior": "Lists only the connected account's unfinished tasks marked for today."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unsupported outbound email",
+              "prompt": "Email my Odyssey board to my team."
+            },
+            {
+              "description": "Access to another user's private board",
+              "prompt": "Show me another user's private Odyssey board."
+            },
+            {
+              "description": "Bulk account deletion",
+              "prompt": "Delete everything in my Odyssey account."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments."
+      },
+      "publication": {
+        "release_notes": "Initial release: board-builder, board-briefing, board-kanban, and board-mindmap skills with the Odyssey MCP server.",
+        "translations": {
+          "ko-KR": {
+            "subtitle": "보드로 프로젝트를 계획하세요",
+            "description": "Odyssey 계정을 연결해 대화로 프로젝트 보드를 꾸리고 운영하세요. 계획이나 회의록을 할일 리스트와 메모 카드로 펼치고, 진행 상황을 브리핑받고, 할일을 리스트 사이로 옮기거나 완료 처리하고, 아이디어를 마인드맵으로 펼칠 수 있습니다. 할일·메모·일정·루틴·기록도 찾고 관리할 수 있습니다. Odyssey 계정이 필요하며, 도구는 연결한 계정의 자료와 그 계정에 공유된 보드에만 접근합니다. 삭제와 보드 댓글 게시는 확인을 받은 뒤에만 실행합니다."
+          }
+        }
+      }
+    }
+  }
+}

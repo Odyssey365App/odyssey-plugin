@@ -1,0 +1,14 @@
+{
+  "name": "odyssey365",
+  "displayName": "Odyssey",
+  "version": "1.0.0",
+  "description": "Plan and run projects on your Odyssey boards from a conversation: turn notes and plans into laid-out boards, get status briefings, move tasks across lists, and brainstorm as mindmaps. Uses the Odyssey connector with your own Odyssey account.",
+  "author": {
+    "name": "Odyssey365",
+    "url": "https://product.odyssey365.app/"
+  },
+  "homepage": "https://product.odyssey365.app/",
+  "repository": "https://github.com/Odyssey365App/odyssey-plugin",
+  "license": "MIT",
+  "keywords": ["odyssey", "project board", "kanban", "mindmap", "tasks", "notes", "productivity"]
+}
