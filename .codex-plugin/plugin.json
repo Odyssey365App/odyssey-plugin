@@ -1,7 +1,7 @@
 {
   "name": "odyssey365",
   "version": "1.0.0",
-  "description": "Plan and run projects on your Odyssey boards from a conversation: turn notes and plans into laid-out boards, get status briefings, move tasks across lists, and brainstorm as mindmaps. Uses the Odyssey MCP server with your own Odyssey account.",
+  "description": "Plan and run projects on your Odyssey60 boards from a conversation: turn notes and plans into laid-out boards, get status briefings, move tasks across lists, and brainstorm as mindmaps. Uses the Odyssey365 MCP server with your own Odyssey account.",
   "author": {
     "name": "Odyssey365",
     "url": "https://product.odyssey365.app/"
@@ -9,13 +9,24 @@
   "homepage": "https://product.odyssey365.app/",
   "repository": "https://github.com/Odyssey365App/odyssey-plugin",
   "license": "MIT",
-  "keywords": ["odyssey", "project board", "kanban", "mindmap", "tasks", "notes", "productivity"],
+  "keywords": [
+    "odyssey",
+    "odyssey365",
+    "odyssey60",
+    "odyssey30",
+    "project board",
+    "kanban",
+    "mindmap",
+    "tasks",
+    "notes",
+    "productivity"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Odyssey",
+    "displayName": "Odyssey365",
     "shortDescription": "Plan projects on your boards",
-    "longDescription": "Connect your Odyssey account to plan and run projects on Odyssey boards through conversation. Turn a plan or meeting notes into a board with task lists and note cards, get a briefing on what is done and what is stuck, move tasks between lists and mark them complete, and brainstorm ideas as a mindmap on the board. You can also find and manage your tasks, notes, calendar events, routines, and records. An Odyssey account is required, and the tools access only the connected user's data and boards shared with that user. Deleting items and posting board comments happen only after you confirm.",
+    "longDescription": "Odyssey365 makes Odyssey60 (planning and recording) and Odyssey30 (reflection and sharing). Connect your Odyssey account to plan and run projects on Odyssey boards through conversation. Turn a plan or meeting notes into a board with task lists and note cards, get a briefing on what is done and what is stuck, move tasks between lists and mark them complete, and brainstorm ideas as a mindmap on the board. You can also find and manage your tasks, notes, calendar events, routines, and records. An Odyssey account is required, and the tools access only the connected user's data and boards shared with that user. Deleting items and posting board comments happen only after you confirm.",
     "developerName": "Odyssey365",
     "category": "Productivity",
     "capabilities": [

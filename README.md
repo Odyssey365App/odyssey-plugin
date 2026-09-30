@@ -1,8 +1,8 @@
-# Odyssey
+# Odyssey365
 
-![Odyssey](assets/logo.png)
+![Odyssey365](assets/logo.png)
 
-Run your projects on [Odyssey](https://product.odyssey365.app/) boards from a conversation. Odyssey is
+Run your projects on [Odyssey60](https://product.odyssey365.app/) boards from a conversation. Odyssey365 makes Odyssey60 (planning and recording) and Odyssey30 (reflection and sharing). Odyssey is
 a planning and journaling app with tasks, notes, calendar, routines, and visual project boards. This
 plugin pairs the Odyssey connector with skills that teach the model how to work a board well: which
 container each item belongs in, when to lay a board out, and what needs your confirmation first.
