@@ -15,7 +15,7 @@ It works in Claude (chat, Cowork, Claude Code) and in ChatGPT and Codex.
 |---|---|---|
 | `board-builder` | Turns a conversation, plan, or meeting notes into a board: tasks go into lists, notes become cards laid out in a grid, grouped by sections. | "Put this launch plan on a new Odyssey board." |
 | `board-briefing` | Reads a board and reports progress per section and list, what is stuck, and the next steps. Read-only unless you ask it to post the briefing. | "Where are we on my Website Redesign board?" |
-| `board-kanban` | Moves tasks between lists, marks them complete, adds new tasks to the right list, and takes items off a board. | "Move the three copy tasks to Done." |
+| `board-kanban` | Runs a project as a kanban: sets up columns, moves tasks between them, marks tasks complete, adds new or existing tasks to the right column, and takes items off. Boards that track progress with canvas lists still work. | "Make a kanban for my Launch project and move the three copy tasks to Done." |
 | `board-mindmap` | Brainstorms as a mindmap on a board and turns chosen branches into tasks. | "Mindmap ideas for our spring campaign on my Marketing board." |
 
 ## Setup
@@ -30,9 +30,9 @@ It works in Claude (chat, Cowork, Claude Code) and in ChatGPT and Codex.
 
 - Server: `https://mcp-odyssey30-60.odyssey365.app` (remote MCP, Streamable HTTP)
 - Sign-in: OAuth 2.1 with dynamic client registration and PKCE, using the user's Odyssey account
-- Tools (58): read tools for tasks, notes, projects and boards, calendar events, routines, records,
+- Tools (78): read tools for tasks, notes, projects and boards, calendar events, routines, records,
   reports, snapshots, and collections, plus unified search; write tools to create and update those
-  items, arrange board components, and complete tasks and routines. Deleting items, posting comments,
+  items, arrange board components, work a project's kanban columns, and complete tasks and routines. Deleting items, posting comments,
   and sending a notification to the user's own devices are marked destructive, so the client asks
   before running them.
 - Scope: only the signed-in user's data and boards other people have shared with that user.
