@@ -1,7 +1,7 @@
 {
   "name": "odyssey365",
   "displayName": "Odyssey365",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plan and run projects on your Odyssey60 boards from a conversation: turn notes and plans into laid-out boards, get status briefings, move tasks across lists, and brainstorm as mindmaps. Uses the Odyssey365 connector with your own Odyssey account.",
   "author": {
     "name": "Odyssey365",
