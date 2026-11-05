@@ -31,7 +31,7 @@ This is a **read-only** workflow. Nothing is changed unless the user asks at the
    4. **Suggested next steps**: at most three, each tied to a specific item.
    Keep it scannable — short bullets, item titles quoted exactly, no raw ids.
 5. **Offer, don't act.** At the end you may offer to (a) move or complete items (see the
-   `board-kanban` skill) or (b) post the briefing to the board's comment thread.
+   `board-lists` skill) or (b) post the briefing to the board's comment thread.
 
 ## Posting the briefing as a board comment
 
