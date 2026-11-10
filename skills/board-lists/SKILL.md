@@ -44,7 +44,7 @@ view requests, and never fake one with sections or coordinates.
    | Take off a list | `remove_from_list(columnId, items)` — the task itself still exists |
    | Hide a list from the Lists view | `set_component_visibility(componentId, lists: false)` — it stays on the board if it was there |
    | Delete a list | Ask first. `delete_list(columnId)` — it goes from both views; its items stay in the project |
-   | Delete an item for good | Ask first. Then `delete_todo` / `delete_memo` |
+   | Delete an item for good | Ask first. Then `delete_item` with `type` (`todo` or `memo`) and the item's `id` |
 
    A list without a status leaves task status alone — change the task with `update_todo` too when
    the user wants both. If a response has `statusFailed`, the move happened but the status did not;
@@ -81,5 +81,5 @@ Some boards track progress with lists that show only on the canvas. Read them wi
   owner.
 - An item can be shared on only one shared board at a time. If a call is refused for that reason, tell
   the user and ask before retrying with `moveFromOtherSharedBoard: true`.
-- Each sheet has its own Lists view. Pass `pageId` to `get_lists` / `save_list` for a sheet other than
+- Each sheet has its own Lists view. Pass `sheetId` to `get_lists` / `save_list` for a sheet other than
   the default one.

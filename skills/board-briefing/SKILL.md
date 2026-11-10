@@ -35,6 +35,7 @@ This is a **read-only** workflow. Nothing is changed unless the user asks at the
 
 ## Posting the briefing as a board comment
 
-`comment_on_project` notifies the board owner and every member and cannot be recalled, so call it
-only after the user explicitly asks. Attach the items you mention with `containItems` instead of
-copying their titles into the text, post once per briefing, and keep `content` to plain text.
+Post with `comment_on_item` (`itemType: "project"`, `itemUid` = the project id). It notifies the
+board owner and every member and cannot be recalled, so call it only after the user explicitly asks.
+Attach the items you mention with `containItems` instead of copying their titles into the text, post
+once per briefing, and keep `content` to plain text.

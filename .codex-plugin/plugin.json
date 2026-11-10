@@ -1,6 +1,6 @@
 {
   "name": "odyssey365",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plan and run projects on your Odyssey60 boards from a conversation: turn notes and plans into laid-out boards, get status briefings, move tasks across lists, and brainstorm as mindmaps. Uses the Odyssey365 MCP server with your own Odyssey account.",
   "author": {
     "name": "Odyssey365",
@@ -106,7 +106,7 @@
         "commerce_description": "This plugin does not sell products or process payments."
       },
       "publication": {
-        "release_notes": "Renames the board-kanban skill to board-lists for the Lists view and updates the skills to the server's renamed list tools (get_lists, save_list, move_list_item, and others) and merged tools (read_image, save_project_page, save_project_folder, follow_thread). Older tool names keep working. The MCP endpoint and sign-in are unchanged.",
+        "release_notes": "Renames the board-kanban skill to board-lists for the Lists view and updates the skills to the server's current tool names: the list tools (get_lists, save_list, move_list_item, and others), delete_item for deleting a task or note, comment_on_item with itemType \"project\" for board comments, and sheetId for board sheets. The server now names pages and sheets as the app does (list_pages, get_page, save_sheet) and merges paired tools (save_routine, save_record, and others), keeping its tool set under 100. Older tool names keep working. The MCP endpoint and sign-in are unchanged.",
         "translations": {
           "ko-KR": {
             "subtitle": "보드로 프로젝트를 계획하세요",

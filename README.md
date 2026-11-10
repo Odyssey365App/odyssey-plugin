@@ -31,7 +31,7 @@ It works in Claude (chat, Cowork, Claude Code) and in ChatGPT and Codex.
 - Server: `https://mcp-odyssey30-60.odyssey365.app` (remote MCP, Streamable HTTP)
 - Sign-in: OAuth 2.1 with dynamic client registration and PKCE, using the user's Odyssey account
 - Tools: read tools for tasks, notes, projects and boards, calendar events, routines, records,
-  reports, snapshots, and collections, plus unified search; write tools to create and update those
+  reports, pages, and collections, plus unified search; write tools to create and update those
   items, arrange board components, work a project's Lists view, and complete tasks and routines. Deleting items, posting comments,
   and sending a notification to the user's own devices are marked destructive, so the client asks
   before running them.
